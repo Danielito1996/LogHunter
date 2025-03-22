@@ -1,0 +1,113 @@
+[versions]
+agp = "8.8.2"
+bcryptVersion = "0.10.2"
+bom = "3.1.1"
+javaJwt = "4.5.0"
+jetlime = "3.0.1"
+konnection = "1.4.3"
+kotlin = "2.0.0"
+coreKtx = "1.15.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+lifecycleRuntimeKtx = "2.8.7"
+activityCompose = "1.10.1"
+composeBom = "2024.04.01"
+#Mapas
+googleMaps = "1.0.0"
+gsmPlayServices = "18.0.2"
+#Iconos
+composeIcons = "1.1.1"
+#DI
+hiltAndroid = "2.51.1"
+hiltNavigationCompose = "1.0.0"
+#Navegacion
+navigationCompose = "2.8.4"
+kotlinSerialization = "1.7.3"
+#Networking
+ktor = "3.0.3"
+googleid = "1.1.1"
+#Google
+credentials = "1.5.0-beta01"
+playServicesAuth = "21.3.0"
+credentialsVersion = "1.3.0"
+playServicesAuthVersion = "21.3.0"
+playServicesLocation = "21.3.0"
+#Cache
+mmkv = "2.0.2" #Cache
+turso = "0.1.0"
+exposed-version = "0.58.0"
+postgres = "42.2.5"
+#Pruebas unitarias
+mock = "1.12.0"
+coroutine-test = "1.10.1"
+appcompat = "1.7.0"
+material = "1.10.0"
+
+[libraries]
+kotlin-metadata = { module = "org.jetbrains.kotlin:kotlin-metadata-jvm", version.ref = "kotlin" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+bom = { module = "io.github.jan-tennert.supabase:bom", version.ref = "bom" }
+java-jwt = { module = "com.auth0:java-jwt", version.ref = "javaJwt" }
+jetlime = { module = "io.github.pushpalroy:jetlime", version.ref = "jetlime" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+#Iconos
+composeIcons-fontAwesome = { module = "br.com.devsrsouza.compose.icons:font-awesome", version.ref = "composeIcons" }
+#Maps
+google-maps = { module = "com.google.maps.android:maps-compose", version.ref = "googleMaps" }
+google-play-services = { module = "com.google.android.gms:play-services-maps", version.ref = "gsmPlayServices" }
+#Di
+androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroid" }
+hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltAndroid" }
+#Navegacion
+androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
+konnection = { module = "dev.tmapps:konnection", version.ref = "konnection" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinSerialization" }
+#Ktor Client
+ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktor-client-cio = { module = "io.ktor:ktor-client-cio", version.ref = "ktor" }
+ktor-client-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-serialization-kotlinx-xml = { module = "io.ktor:ktor-serialization-kotlinx-xml", version.ref = "ktor" }
+ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
+ktor-client-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor" }
+#Google Auth
+googleid = { module = "com.google.android.libraries.identity.googleid:googleid", version.ref = "googleid" }
+lib-bcrypt = { module = "at.favre.lib:bcrypt", version.ref = "bcryptVersion" }
+play-services-auth = { module = "com.google.android.gms:play-services-auth", version.ref = "playServicesAuthVersion" }
+play-services-location = { module = "com.google.android.gms:play-services-location", version.ref = "playServicesLocation" }
+#cache storegate
+cache-mmkv = { module = "com.tencent:mmkv" , version.ref = "mmkv" }
+exposed-core = { module = "org.jetbrains.exposed:exposed-core", version.ref = "exposed-version" }
+exposed-jdbc = { module = "org.jetbrains.exposed:exposed-jdbc", version.ref = "exposed-version" }
+exposed-dao = { module = "org.jetbrains.exposed:exposed-dao", version.ref = "exposed-version" }
+postgres-db = { module = "org.postgresql:postgresql", version.ref = "postgres" }
+postgrest-kt = { module = "io.github.jan-tennert.supabase:postgrest-kt" }
+supabase-postgrest-kt = { module = "io.github.jan-tennert.supabase:postgrest-kt", version.ref = "bom" }
+#Pruebas unitarias
+test-mockk = { module = "io.mockk:mockk", version.ref = "mock" }
+test-coroutine = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutine-test" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlinSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+google-services = {id = "com.google.gms.google-services", version= "4.4.2"}
+android-library = { id = "com.android.library", version.ref = "agp" }
+
+
